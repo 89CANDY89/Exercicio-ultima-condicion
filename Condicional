@@ -1,0 +1,57 @@
+Exercícios Condicionais
+
+ Faça um programa que peça dois números e imprima o maior deles.
+num1 = int(input("Digite o primeiro número: "))
+num2 = int(input("Digite o segundo número: "))
+
+
+if num1 > num2:
+    print("O maior número é:", num1)
+elif num2 > num1:
+    print("O maior número é:", num2)
+else:
+    print("Os números são iguais")
+Faça um script que peça um valor e mostre na tela se o valor é positivo ou negativo.
+num = int(input("Digite um número: "))
+
+
+if num > 0:
+    print("O número é positivo")
+elif num < 0:
+    print("O número é negativo")
+else:
+    print("O número é zero")
+Crie um programa que verifique se uma letra digitada é "F" ou "M". Conforme a letra escrever: F - Feminino, M - Masculino, Sexo Inválido.
+letra = input("Digite uma letra: ").upper()
+
+
+if letra == "F":
+    print("F - Feminino")
+elif letra == "M":
+    print("M - Masculino")
+else:
+    print("Sexo Inválido")
+Crie um código em linguagem Python que peça o nome do usuário por meio da função input (). Se o nome for "Ultima", imprima "Bem-vindo, você é um(a) exclenete aluno(a)". Caso contrário, imprima "Bom dia, NOME". (Substitua o NOME pelo nome do usuário).
+letra = input("Digite uma letra: ").upper()
+
+
+if letra in "AEIOU":
+    print("A letra é uma vogal")
+else:
+    print("A letra é uma consoante")
+ Escrever um programa em Python para ler um número inteiro e informar se ele é divisível por 5.
+num = int(input("Digite um número inteiro: "))
+
+
+if num % 5 == 0:
+    print("O número é divisível por 5")
+else:
+    print("O número não é divisível por 5")
+Escreva um programa Python para verificar se uma letra do Alfabeto(Abecedário) é uma vogal ou consoante.
+nome = input("Digite seu nome: ")
+
+
+if nome.lower() == "ultima":
+    print("Bem-vindo, você é um(a) exclenete aluno(a)")
+else:
+    print("Bom dia, {}".format(nome))
